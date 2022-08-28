@@ -1,9 +1,10 @@
+require("dotenv").config();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    STAGING_ALCHEMY_KEY:
-      "https://eth-rinkeby.alchemyapi.io/v2/He693GEWr77YjtWHD9xUYTl1vJwIwVZH",
+    STAGING_ALCHEMY_KEY: process.env.STAGING_ALCHEMY_KEY,
   },
 };
 
